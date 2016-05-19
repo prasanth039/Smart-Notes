@@ -7,18 +7,30 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.View;
 
+import butterknife.Bind;
+import butterknife.ButterKnife;
+
 public class HomeActivity extends AppCompatActivity implements HomeMVP.View {
+
+    @Bind(R.id.toolbar)
+    Toolbar toolbar;
+
+    @Bind(R.id.fab)
+    FloatingActionButton floatingActionButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        ButterKnife.bind(this);
         setSupportActionBar(toolbar);
         setTitle(getString(R.string.notes_title));
+        if (savedInstanceState == null) {
+            getSupportFragmentManager().beginTransaction().replace(R.id.container_layout,
+                HomeFragment.newInstance(), HomeFragment.TAG).commit();
+        }
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
+        floatingActionButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
