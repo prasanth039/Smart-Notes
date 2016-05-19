@@ -7,7 +7,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.View;
 
-public class HomeActivity extends AppCompatActivity {
+public class HomeActivity extends AppCompatActivity implements HomeMVP.View {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,5 +30,10 @@ public class HomeActivity extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.home, menu);
         return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public void showLoading() {
+
     }
 }
