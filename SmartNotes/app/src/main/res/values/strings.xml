@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">SmartNotes</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="notes_title">Smart notes</string>
+    <string name="sync">Sync</string>
+
+</resources>
