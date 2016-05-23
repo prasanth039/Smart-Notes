@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "980658585159",
+    "firebase_url": "https://smatnotes.firebaseio.com",
+    "project_id": "smatnotes",
+    "storage_bucket": "smatnotes.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:980658585159:android:26924b25a8c3d097",
+        "android_client_info": {
+          "package_name": "com.prasanth.smartnotes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "980658585159-rm8hv9l3ea3c80ckivgadmngcul326tb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDO2AefPHMQScSiPohN-rZ3j1iQTg-yZzA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

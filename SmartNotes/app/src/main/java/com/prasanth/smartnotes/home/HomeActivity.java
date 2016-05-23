@@ -1,4 +1,4 @@
-package com.prasanth.smartnotes;
+package com.prasanth.smartnotes.home;
 
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -7,10 +7,12 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.View;
 
+import com.prasanth.smartnotes.R;
+
 import butterknife.Bind;
 import butterknife.ButterKnife;
 
-public class HomeActivity extends AppCompatActivity implements HomeMVP.View {
+public class HomeActivity extends AppCompatActivity {
 
     @Bind(R.id.toolbar)
     Toolbar toolbar;
@@ -27,7 +29,7 @@ public class HomeActivity extends AppCompatActivity implements HomeMVP.View {
         setTitle(getString(R.string.notes_title));
         if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction().replace(R.id.container_layout,
-                HomeFragment.newInstance(), HomeFragment.TAG).commit();
+                    HomeFragment.newInstance(), HomeFragment.TAG).commit();
         }
 
         floatingActionButton.setOnClickListener(new View.OnClickListener() {
@@ -42,10 +44,5 @@ public class HomeActivity extends AppCompatActivity implements HomeMVP.View {
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.home, menu);
         return super.onCreateOptionsMenu(menu);
-    }
-
-    @Override
-    public void showLoading() {
-
     }
 }
