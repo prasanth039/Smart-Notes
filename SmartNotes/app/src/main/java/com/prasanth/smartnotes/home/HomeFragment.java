@@ -68,4 +68,9 @@ public class HomeFragment extends Fragment implements HomeMVP.View {
         return view;
     }
 
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        ButterKnife.unbind(this);
+    }
 }
