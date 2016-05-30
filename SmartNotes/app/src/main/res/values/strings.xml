@@ -6,4 +6,7 @@
     <string name="notes_title">Smart notes</string>
     <string name="sync">Sync</string>
 
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>

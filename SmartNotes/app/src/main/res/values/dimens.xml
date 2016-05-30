@@ -11,5 +11,6 @@
     <dimen name="text_size">20sp</dimen>
     <dimen name="min_card_height">160dp</dimen>
     <dimen name="card_margin">4dp</dimen>
+    <dimen name="edit_padding">8dp</dimen>
 
 </resources>

@@ -1,5 +1,6 @@
 package com.prasanth.smartnotes.home;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -11,18 +12,21 @@ import android.view.ViewGroup;
 
 import com.prasanth.smartnotes.R;
 import com.prasanth.smartnotes.datamodel.Note;
+import com.prasanth.smartnotes.edit.EditNoteActivity;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 
 public class HomeFragment extends Fragment implements HomeMVP.View {
 
     public static final String TAG = HomeFragment.class.getSimpleName();
 
-    private RecyclerView recyclerView;
+    @Bind(R.id.note_view)
+    RecyclerView recyclerView;
+
     private HomeMVP.Presenter presenter;
 
     @Override
@@ -49,14 +53,18 @@ public class HomeFragment extends Fragment implements HomeMVP.View {
         adapter.setNotes(notes);
     }
 
+    @OnClick(R.id.fab)
+    void handleFABTap() {
+        Intent intent = new Intent(getActivity(), EditNoteActivity.class);
+        getActivity().startActivity(intent);
+    }
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_home, null);
-        ButterKnife.bind(view);
-        recyclerView = (RecyclerView) view.findViewById(R.id.note_view);
+        ButterKnife.bind(this, view);
         return view;
     }
 

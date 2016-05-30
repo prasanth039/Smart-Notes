@@ -5,9 +5,6 @@ import com.prasanth.smartnotes.datamodel.Note;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by Prasanth on 5/22/2016.
- */
 
 public class DummyModel implements HomeMVP.Model {
     @Override
