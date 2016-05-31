@@ -1,4 +1,4 @@
-package com.prasanth.smartnotes.datamodel;
+package com.prasanth.smartnotes.data;
 
 import android.graphics.Color;
 

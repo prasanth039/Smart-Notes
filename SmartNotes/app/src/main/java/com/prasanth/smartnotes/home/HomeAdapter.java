@@ -7,7 +7,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.prasanth.smartnotes.R;
-import com.prasanth.smartnotes.datamodel.Note;
+import com.prasanth.smartnotes.data.Note;
 
 import java.util.ArrayList;
 import java.util.List;

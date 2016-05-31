@@ -1,6 +1,6 @@
 package com.prasanth.smartnotes.home;
 
-import com.prasanth.smartnotes.datamodel.Note;
+import com.prasanth.smartnotes.data.Note;
 
 import java.util.List;
 

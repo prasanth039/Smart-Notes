@@ -11,7 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.prasanth.smartnotes.R;
-import com.prasanth.smartnotes.datamodel.Note;
+import com.prasanth.smartnotes.data.Note;
 import com.prasanth.smartnotes.edit.EditNoteActivity;
 
 import java.util.List;
